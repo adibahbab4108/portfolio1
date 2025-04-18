@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero'
 import AboutMe from '../components/AboutMe/AboutMe'
+import Education from '../components/Education/Education'
+import Experience from "../components/Experience/Experience";
+
 
 const Main = () => {
     return (
@@ -15,6 +18,8 @@ const Main = () => {
             <div className="bg-[#0a0214]">
                 <div className="container mx-auto px-6">
                     <AboutMe />
+                    <Education/>
+                    <Experience/>
                 </div>
             </div>
         </>

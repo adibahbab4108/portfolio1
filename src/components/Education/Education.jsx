@@ -1,10 +1,9 @@
 import SectionTitle from "../shared/SectionTitle";
-import {
-    certificates
-} from "../../assets/certificates/certificates"
+import certificates from "../../assets/certificates.json" //as it is from assets
 import Marquee from "react-fast-marquee";
 
 const Education = () => {
+    console.log()
     return (
         <div id="education">
 
@@ -31,38 +30,16 @@ const Education = () => {
                     <p className="font-bold text-gray-300 mt-2">Bakalia High School</p>
                 </div>
             </div>
-            <div className=" mt-8">
+            <div className=" mt-8 overflow-x-auto cursor-grab active:cursor-grabbing">
                 <Marquee pauseOnHover="true" className="flex gap-4">
-                    <div className="w-70 px-1 cursor-pointer  ">
-                        <img src={certificates.webmasterCertificate} alt="" className="" />
-                    </div>
-                    <div className="w-70 px-1 cursor-pointer">
-                        <a href="http://localhost:5174/src/assets/certificates/programming-hero.jpg" target="_blank" rel="noopener noreferrer">
-                            <img src={certificates.ph1} alt="" />
-                        </a>
-                    </div>
-                    <div className="w-70 px-1 cursor-pointer">
-                        <a href={certificates.ieee1} target="_blank" rel="noopener noreferrer">
-                            <img src={certificates.ieee1} alt="Certificate" />
-                        </a>
-                    </div>
-                    <div className="w-70 px-1 cursor-pointer">
-                        <img src={certificates.cloudToIot} alt="" />
-                    </div>
-                    <div className="w-70 px-1 cursor-pointer">
-                        <img src={certificates.fiveG} alt="" />
-                    </div>
-                    <div className="w-70 px-1 cursor-pointer">
-                        <img src={certificates.dataScienceML} alt="" />
-                    </div>
-                    <div className="w-70 px-1 cursor-pointer">
-                        <img src={certificates.icrcs} alt="" />
-                    </div>
-                    <div className="w-70 px-1 cursor-pointer">
-                        <img src={certificates.cyber1} alt="" />
-                    </div>
+                    {
+                        Object.entries(certificates).map(([key, url]) => (
+                            <div key={key} className="w-70 px-1 cursor-pointer  hover:scale-150 transition-all duration-100 ">
+                                <img src={url} alt="" className="" />
+                            </div>
+                        ))
+                    }
                 </Marquee>
-
             </div>
         </div>
     );
