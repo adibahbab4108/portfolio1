@@ -1,2 +1,21 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+html {
+    scroll-behavior: smooth;
+}
+
+.customized-btn {
+    @apply font-bold btn rounded-full bg-gradient-to-r from-violet-800 to-slate-900 text-white/80 text-lg p-6 hover:bg-gradient-to-l border-0 transition duration-300
+}
+
+
+.spining-card {
+    background: linear-gradient(rgb(255, 255, 255), rgb(11, 253, 221));
+    animation: spin 7s linear infinite;
+    width: calc(50% + 1px);
+    height: calc(100% + 200px);
+    top: -20%;
+    left: 20%;
+    z-index: -1;
+}
