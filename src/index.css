@@ -6,7 +6,7 @@ html {
 }
 
 .customized-btn {
-    @apply font-bold btn rounded-full bg-gradient-to-r from-violet-800 to-slate-900 text-white/80 text-lg p-6 hover:bg-gradient-to-l border-0 transition duration-300
+    @apply font-bold btn rounded-full bg-gradient-to-r from-violet-800 to-slate-900 text-white/80 text-lg p-6 hover:bg-gradient-to-l border-0
 }
 
 

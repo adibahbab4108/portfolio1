@@ -79,7 +79,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {/* Resume */}
-                    <button className="customized-btn">
+                    <button className="customized-btn ">
                         <a href="#" download >
                             Resume
                         </a>

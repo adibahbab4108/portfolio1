@@ -6,6 +6,7 @@ import Education from '../components/Education/Education'
 import Experience from "../components/Experience/Experience";
 import Skills from "../components/Skills/Skills";
 import Projects from "../components/Projects/Projects";
+import ContactMe from "../components/ContactMe/ContactMe";
 
 
 const Main = () => {
@@ -24,6 +25,7 @@ const Main = () => {
                     <Experience/>
                     <Skills/>
                     <Projects/>
+                    <ContactMe/>
                 </div>
             </div>
         </>
