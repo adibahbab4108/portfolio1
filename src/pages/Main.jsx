@@ -4,6 +4,8 @@ import Hero from '../components/Hero/Hero'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Education from '../components/Education/Education'
 import Experience from "../components/Experience/Experience";
+import Skills from "../components/Skills/Skills";
+import Projects from "../components/Projects/Projects";
 
 
 const Main = () => {
@@ -20,6 +22,8 @@ const Main = () => {
                     <AboutMe />
                     <Education/>
                     <Experience/>
+                    <Skills/>
+                    <Projects/>
                 </div>
             </div>
         </>

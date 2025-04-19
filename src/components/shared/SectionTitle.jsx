@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-// eslint-disable-next-line react/prop-types
 const SectionTitle = ({ title = "", subtitle = "" }) => {
     const [isExpended, setIsExpended] = useState(false)
-    console.log(subtitle.length)
+
     return (
         <div className="pt-20 pb-12 text-center">
             <h1 className="text-5xl md:text-6xl font-bold py-3

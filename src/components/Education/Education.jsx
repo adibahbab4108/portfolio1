@@ -1,9 +1,23 @@
+import { useEffect, useState } from "react";
 import SectionTitle from "../shared/SectionTitle";
-import certificates from "../../assets/certificates.json" //as it is from assets
 import Marquee from "react-fast-marquee";
 
 const Education = () => {
-    console.log()
+    const [certificates, setSertificates] = useState({})
+
+    const getCertificates = async () => {
+        try {
+            const response = await fetch('certificates.json')
+            const data = await response.json();
+            setSertificates(data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    useEffect(() => {
+        getCertificates()
+    }, [])
+
     return (
         <div id="education">
 
@@ -30,12 +44,12 @@ const Education = () => {
                     <p className="font-bold text-gray-300 mt-2">Bakalia High School</p>
                 </div>
             </div>
-            <div className=" mt-8 overflow-x-auto cursor-grab active:cursor-grabbing">
+            <div className=" mt-8 cursor-grab active:cursor-grabbing">
                 <Marquee pauseOnHover="true" className="flex gap-4">
                     {
                         Object.entries(certificates).map(([key, url]) => (
-                            <div key={key} className="w-70 px-1 cursor-pointer  hover:scale-150 transition-all duration-100 ">
-                                <img src={url} alt="" className="" />
+                            <div key={key} className="w-70 px-1 cursor-pointer  hover:scale-200 transition-all duration-100 ">
+                                <img src={url} alt="" className=" object-cover" />
                             </div>
                         ))
                     }
