@@ -3,7 +3,7 @@ import WorksGallary from "./WorksGallary";
 const Experience = () => {
     return (
         <div>
-            <SectionTitle title="Experience" subtitle="" />
+            <SectionTitle title="Experience" subtitle="Extra curricular activities" />
             <div className="flex justify-center gap-6 overflow-hidden py-8">
                 <div className="border w-80 h-48 text-white p-4 rounded-br-4xl transition-all duration-300  hover:bg-violet-700 shadow-lg shadow-purple-300">
                     <h1 className="sm:text-2xl font-bold mt-2">Webmaster</h1>
