@@ -26,30 +26,30 @@ const Projects = () => {
         <div id="projects">
             <SectionTitle title="Projects" subtitle="We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers." />
 
-            <div className={`grid grid-cols-1 ${showProjectDetails ? `md:grid-cols-1  ` : `md:grid-cols-2`} gap-8  md:gap-20 lg:gap-40 `}>
+            <div className={`grid grid-cols-1 ${showProjectDetails ? '' : 'sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'} gap-4  `}>
                 {
                     !showProjectDetails ? projects.map((project, idx) => {
                         const { title, description, screenshot } = project;
 
                         return (
-                            <div key={idx} className=" bg-slate-900 text-white p-6 rounded-2xl shadow-lg  hover:shadow-xl group">
-                                <div className="w-full  overflow-hidden rounded-lg transition-all">
+                            <div key={idx} className="flex flex-col justify-between bg-slate-900 text-white p-4 rounded-2xl shadow-lg  hover:shadow-xl group">
+                                <div className="overflow-hidden rounded-lg transition-all">
                                     <img
                                         src={screenshot}
                                         alt={title}
-                                        className=" w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                                        className=" object-cover transition-transform duration-300 group-hover:scale-110"
                                     />
                                 </div>
-
-                                <h2 className="text-2xl font-bold mt-4 text-violet-400">{title}</h2>
-                                <p className=" text-gray-300 font-bold text-justify mt-2 pt-8 px-2 text-sm z-10
-                                    to-95% 
-                                     group-hover:bottom-0">{description}</p>
-                                <div className="mt-4 flex justify-between">
-                                    <button
-                                        onClick={() => handleShowProject(title)}
-                                        className="btn btn-sm btn-secondary "
-                                    >View More</button>
+                                <h2 className="text-xl  md:text-2xl font-bold mt-4 text-violet-400">{title}</h2>
+                                <div className="">
+                                    <p className=" text-gray-300 font-bold text-justify mt-2 text-sm
+                                     group-hover:bottom-0">{description.slice(0, 100)}</p>
+                                    <div className=" flex justify-between mt-2 ">
+                                        <button
+                                            onClick={() => handleShowProject(title)}
+                                            className="btn btn-sm btn-secondary "
+                                        >View More</button>
+                                    </div>
                                 </div>
                             </div>
                         );
@@ -61,7 +61,7 @@ const Projects = () => {
                                     <img
                                         src={projectDetails.screenshot}
                                         alt={projectDetails.title}
-                                        className="  object-cover transition-transform duration-300 hover:scale-96"
+                                        className="transition-transform duration-300 hover:scale-96"
                                     />
                                     <p className="absolute text-gray-300 font-bold text-justify mt-2 pt-8 px-2 text-sm z-10
                                      bg-gradient-to-t from-slate-900 via-slate-800 to-transparent to-95% 
