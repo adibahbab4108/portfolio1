@@ -1,5 +1,5 @@
 import { FaDownload } from "react-icons/fa";
-import myProfile from "../../assets/profile.png"
+import myProfile from "../../assets/profile.webp"
 import SocialLink from "../shared/SocialLink";
 const Hero = () => {
     return (
@@ -17,7 +17,7 @@ const Hero = () => {
                     </p>
                     {/* Buttons & Social Icons */}
                     <div className="mt-6 flex flex-col md:flex-row items-center gap-4">
-                        <a href="#" download className="flex items-center gap-2 customized-btn">
+                        <a href="/Adib_Ahbab_Resume.pdf" download className="flex items-center gap-2 customized-btn">
                             Download CV <FaDownload />
                         </a>
                         <SocialLink />
@@ -34,7 +34,7 @@ const Hero = () => {
                         <div className="spining-card absolute "></div>
                         <img
                             src={myProfile}
-                            alt="adibahbab4108"
+                            alt="Adib Ahbab"
                             className="w-full h-full object-cover rounded-3xl z-20"
                         />
                     </div>
@@ -45,20 +45,16 @@ const Hero = () => {
             {/* Stats Section */}
             <div className="flex flex-wrap justify-evenly gap-8 py-10 bg-black/30 rounded-2xl my-20">
                 <div className="text-center">
-                    <h3 className="text-4xl font-bold">Ꝏ</h3>
+                    <h3 className="text-4xl font-bold">1.5</h3>
                     <p className="text-gray-400">Years of Experience</p>
                 </div>
                 <div className="text-center">
-                    <h3 className="text-4xl font-bold">6+</h3>
-                    <p className="text-gray-400">Projects Completed</p>
+                    <h3 className="text-4xl font-bold">2</h3>
+                    <p className="text-gray-400">Production-grade Applications</p>
                 </div>
-                <div className="text-center">
-                    <h3 className="text-4xl font-bold">Ꝏ</h3>
-                    <p className="text-gray-400">Happy Clients</p>
-                </div>
-                <div className="text-center">
+                   <div className="text-center">
                     <h3 className="text-4xl font-bold">10+</h3>
-                    <p className="text-gray-400">Tech Stacks Mastered</p>
+                    <p className="text-gray-400">Projects Completed</p>
                 </div>
             </div>
         </section>

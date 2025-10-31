@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import Marquee from "react-fast-marquee";
 
 const SkillTechMarquee = ({ title, category, direction }) => {
@@ -9,7 +8,7 @@ const SkillTechMarquee = ({ title, category, direction }) => {
             <Marquee
                 pauseOnHover
                 direction={direction}
-                speed={40} gradient={true}
+                speed={100} gradient={true}
                 gradientColor={'#0A0214'}
                 autoFill
             >

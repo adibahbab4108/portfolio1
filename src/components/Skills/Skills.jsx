@@ -27,7 +27,8 @@ const Skills = () => {
         .filter(skill => skill.slug === "backend" || skill.slug === "security")
         .flatMap(skill => skill.skills) || [];
     const toolsUtils = skills.find(skill => skill.slug === "tools-utilities")?.skills || [];
-    const otherLanguages = skills.find(skill => skill.slug === "other-languages")?.skills || [];
+    const securityAndPayments = skills.find(skill => skill.slug === "security-payment")?.skills || [];
+    const clouldDeployments = skills.find(skill => skill.slug === "cloud-deployment")?.skills || [];
 
 
     return (
@@ -40,7 +41,8 @@ const Skills = () => {
             {/* Tools And Utilities */}
             <SkillTechMarquee title={"Tools And Utilities "} category={toolsUtils} direction={"right"} />
             {/* Other Languages */}
-            <SkillTechMarquee title={"Other Languages"} category={otherLanguages} direction={"left"} />
+            <SkillTechMarquee title={"Security and Payments"} category={securityAndPayments} direction={"left"} />
+            <SkillTechMarquee title={"Clould & Deployment"} category={clouldDeployments} direction={"left"} />
 
         </div >
     );
