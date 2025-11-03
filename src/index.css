@@ -5,13 +5,16 @@ html {
     scroll-behavior: smooth;
 }
 
+@theme {
+    --color-secondary:  #0bfddd;
+}
 .customized-btn {
     @apply font-bold btn rounded-full bg-gradient-to-r from-violet-800 to-slate-900 text-white/80 text-lg p-6 hover:bg-gradient-to-l border-0
 }
 
 
 .spining-card {
-    background: linear-gradient(rgb(255, 255, 255), rgb(11, 253, 221));
+    background: linear-gradient(#ffffff, #0bfddd);
     animation: spin 7s linear infinite;
     width: calc(50% + 1px);
     height: calc(100% + 200px);

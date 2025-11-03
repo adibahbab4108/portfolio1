@@ -29,7 +29,7 @@ const ContactMe = () => {
             <SectionTitle title="Let's Work Together" subtitle="I design and code beautifully simple things and i love what i do. Just simple like that!" />
             <div className="">
                 <div className="text-center my-4">
-                    <h3 className="my-2 bg-purple-900 py-3 text-white font-semibold"> Email: <a href="mailto:adib.abc2022@gmail.com">adib.abc2022@gmail.com</a></h3>
+                    <h3 className="my-2 bg-purple-900 py-3 text-white font-semibold"> Email: <a href="mailto:adib.ahbab00@gmail.com">adib.ahbab00@gmail.com</a></h3>
                 </div>
                 <div className="border-purple-500/20 border">
                     <form onSubmit={handleMessageSubmit} className="card-body">

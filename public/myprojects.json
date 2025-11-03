@@ -1,100 +1,123 @@
 {
-    "projects": [
-        {
-            "title": "Employee Management System",
-            "description": "A comprehensive web-based system for managing employee records, attendance, payroll, and performance tracking. Designed for efficiency and ease of use.",
-            "technologies": [
-                "React",
-                "Node.js",
-                "Express",
-                "MongoDB",
-                "Tailwind CSS"
-            ],
-            "github": "https://github.com/adibahbab4108/employee-management-system",
-            "live_demo": "https://employee-management-3e084.web.app/",
-            "screenshot": "/project_demo/project1ss1.png",
-            "challenges_faced": [
-                "Ensuring real-time attendance tracking with minimal latency.",
-                "Implementing secure and role-based access control.",
-                "Optimizing performance when handling large employee datasets."
-            ],
-            "potential_improvements": [
-                "Integrate AI-driven analytics for better performance evaluation.",
-                "Enhance security with multi-factor authentication (MFA).",
-                "Improve UI/UX for smoother navigation and user experience."
-            ]
-        },
-        {
-            "title": "Language Exchange Platform",
-            "description": "An interactive platform that connects language learners with native speakers for practice through chat, video calls, and gamified lessons.",
-            "technologies": [
-                "Next.js",
-                "Firebase",
-                "Socket.io",
-                "Tailwind CSS"
-            ],
-            "github": "https://github.com/adibahbab4108/language-exchange",
-            "live_demo": "https://language-exchange-e55d1.web.app/",
-            "screenshot": "/project_demo/languageexchange1.png",
-            "challenges_faced": [
-                "Managing real-time communication and chat synchronization.",
-                "Ensuring a seamless user experience during video calls.",
-                "Handling different languages and text formatting properly."
-            ],
-            "potential_improvements": [
-                "Introduce AI-based language correction and suggestions.",
-                "Enhance video call stability with better WebRTC integration.",
-                "Implement a points-based reward system for gamification."
-            ]
-        },
-        {
-            "title": "Career Up Consultancy",
-            "description": "A career guidance and job-matching platform that helps users connect with mentors, access resources, and apply for jobs in their field.",
-            "technologies": [
-                "React",
-                "Firebase",
-                "Tailwind CSS",
-                "AOS (animation on Scroll)",
-                "vite"
-            ],
-            "github": "https://github.com/adibahbab4108/CareerUp-Consultancy-Web",
-            "live_demo": "https://career-up-b9.web.app/",
-            "screenshot": "/project_demo/careerup1.png",
-            "challenges_faced": [
-                "Matching job seekers with mentors based on skillset and interest.",
-                "Ensuring a user-friendly interface for career guidance resources.",
-                "Managing job application tracking and updates in real time."
-            ],
-            "potential_improvements": [
-                "Introduce AI-based resume analysis and feedback.",
-                "Expand job-matching capabilities with ML-based recommendations.",
-                "Add more interactive career assessment tools."
-            ]
-        },
-        {
-            "title": "Bistro Boss Restaurant",
-            "description": "A modern restaurant management system with online reservations, menu browsing, and a dynamic ordering system to enhance customer experience.",
-            "technologies": [
-                "Tailwind CSS",
-                "React",
-                "tenStack Query",
-                "Mongodb",
-                "axios",
-                "Firebase"
-            ],
-            "github": "https://github.com/adibahbab4108/bistro-boss-restaurant",
-            "live_demo": "https://yourwebsite.com/bistro-boss",
-            "screenshot": "/project_demo/bistroboss1.png",
-            "challenges_faced": [
-                "Handling real-time order updates efficiently.",
-                "Ensuring smooth UI/UX for a seamless ordering process.",
-                "Managing different user roles (customers, staff, admin)."
-            ],
-            "potential_improvements": [
-                "Implement AI-based menu recommendations based on user behavior.",
-                "Improve order tracking with real-time notifications.",
-                "Enhance security for payment transactions."
-            ]
-        }
-    ]
+  "projects": [
+    {
+      "title": "Digital Wallet System",
+      "description": "A secure and user-friendly digital wallet application that include role-based dashboards, automatic wallet creation with session-based transactions for atomicity, deposit/withdraw/send money, agent cash-in/out, transaction history with filters & pagination, user/agent management, (block/suspend/approve), JWT authentication, responsive UI, dark/light theme",
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Redux Toolkit",
+        "Node.js",
+        "Express",
+        "Mongoose",
+        "jwt"
+      ],
+      "frontend": "https://github.com/adibahbab4108/digital-wallet-system-frontend",
+      "backend": "https://github.com/adibahbab4108/digital-wallet-system",
+      "live_demo": "https://digital-wallet-system-frontend-green.vercel.app/",
+      "screenshot": "/project_demo/digitalwallet1.png",
+      "challenges_faced": [
+        "Implementing secure session-based transactions to ensure atomicity.",
+        "Managing role-based access control for different user types."
+      ],
+      "potential_improvements": [
+        "Add support for multiple currencies and exchange rates.",
+        "Implement AI-driven fraud detection mechanisms."
+
+      ]
+    },
+    {
+      "title": "Employee Management System",
+      "description": "A comprehensive web-based system for managing employee records, attendance, payroll, and performance tracking. Designed for efficiency and ease of use.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Tailwind CSS"
+      ],
+      "frontend": "https://github.com/adibahbab4108/employee-management-system",
+      "live_demo": "https://employee-management-3e084.web.app/",
+      "screenshot": "/project_demo/project1ss1.png",
+      "challenges_faced": [
+        "Ensuring real-time attendance tracking with minimal latency.",
+        "Implementing secure and role-based access control.",
+        "Optimizing performance when handling large employee datasets."
+      ],
+      "potential_improvements": [
+        "Integrate AI-driven analytics for better performance evaluation.",
+        "Enhance security with multi-factor authentication (MFA).",
+        "Improve UI/UX for smoother navigation and user experience."
+      ]
+    },
+    {
+      "title": "Language Exchange Platform",
+      "description": "An interactive platform that connects language learners with native speakers for practice through chat, video calls, and gamified lessons.",
+      "technologies": ["Next.js", "Firebase", "Socket.io", "Tailwind CSS"],
+      "frontend": "https://github.com/adibahbab4108/language-exchange",
+      "live_demo": "https://language-exchange-e55d1.web.app/",
+      "screenshot": "/project_demo/languageexchange1.png",
+      "challenges_faced": [
+        "Managing real-time communication and chat synchronization.",
+        "Ensuring a seamless user experience during video calls.",
+        "Handling different languages and text formatting properly."
+      ],
+      "potential_improvements": [
+        "Introduce AI-based language correction and suggestions.",
+        "Enhance video call stability with better WebRTC integration.",
+        "Implement a points-based reward system for gamification."
+      ]
+    },
+    {
+      "title": "Career Up Consultancy",
+      "description": "A career guidance and job-matching platform that helps users connect with mentors, access resources, and apply for jobs in their field.",
+      "technologies": [
+        "React",
+        "Firebase",
+        "Tailwind CSS",
+        "AOS (animation on Scroll)",
+        "vite"
+      ],
+      "frontend": "https://github.com/adibahbab4108/CareerUp-Consultancy-Web",
+      "live_demo": "https://career-up-b9.web.app/",
+      "screenshot": "/project_demo/careerup1.png",
+      "challenges_faced": [
+        "Matching job seekers with mentors based on skillset and interest.",
+        "Ensuring a user-friendly interface for career guidance resources.",
+        "Managing job application tracking and updates in real time."
+      ],
+      "potential_improvements": [
+        "Introduce AI-based resume analysis and feedback.",
+        "Expand job-matching capabilities with ML-based recommendations.",
+        "Add more interactive career assessment tools."
+      ]
+    },
+    {
+      "title": "Bistro Boss Restaurant",
+      "description": "A modern restaurant management system with online reservations, menu browsing, and a dynamic ordering system to enhance customer experience.",
+      "technologies": [
+        "Tailwind CSS",
+        "React",
+        "tenStack Query",
+        "Mongodb",
+        "axios",
+        "Firebase"
+      ],
+      "frontend": "https://github.com/adibahbab4108/bistro-boss-restaurant",
+      "live_demo": "https://yourwebsite.com/bistro-boss",
+      "screenshot": "/project_demo/bistroboss1.png",
+      "challenges_faced": [
+        "Handling real-time order updates efficiently.",
+        "Ensuring smooth UI/UX for a seamless ordering process.",
+        "Managing different user roles (customers, staff, admin)."
+      ],
+      "potential_improvements": [
+        "Implement AI-based menu recommendations based on user behavior.",
+        "Improve order tracking with real-time notifications.",
+        "Enhance security for payment transactions."
+      ]
+    }
+  ]
 }

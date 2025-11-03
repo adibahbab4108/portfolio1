@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SectionTitle from "../shared/SectionTitle";
+import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   const [projects, setProjects] = useState(null);
@@ -33,7 +34,7 @@ const Projects = () => {
         className={`grid grid-cols-1 ${
           showProjectDetails
             ? ""
-            : "sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+            : "sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4"
         } gap-4  `}
       >
         {!showProjectDetails ? (
@@ -49,7 +50,7 @@ const Projects = () => {
                   <img
                     src={screenshot}
                     alt={title}
-                    className=" object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="min-h-70 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                 </div>
                 <h2 className="text-xl  md:text-2xl font-bold mt-4 text-violet-400">
@@ -57,17 +58,18 @@ const Projects = () => {
                 </h2>
                 <div className="">
                   <p
-                    className=" text-gray-300 font-bold text-justify mt-2 text-sm
+                    className=" text-gray-400 font-bold text-justify mt-2 text-sm
                                      group-hover:bottom-0"
                   >
-                    {description.slice(0, 100)}
+                    {description.slice(0, 120)}
+                    {"..."}
                   </p>
-                  <div className=" flex justify-between mt-2 ">
+                  <div className=" flex justify-between my-2 ">
                     <button
                       onClick={() => handleShowProject(title)}
-                      className="btn btn-sm btn-secondary "
+                      className="btn btn-sm bg-[#0bfddd] border-0 text-black"
                     >
-                      View More
+                      Details
                     </button>
                   </div>
                 </div>
@@ -128,13 +130,24 @@ const Projects = () => {
               <p></p>
 
               <div className="mt-4 flex justify-between">
-                <a
-                  href={projectDetails.github}
-                  target="_blank"
-                  className="btn-xs border rounded-full px-3 py-0.5 font-semibold text-violet-500 hover:text-violet-300"
-                >
-                  GitHub Repo →
-                </a>
+                <div className="flex gap-2">
+                  <a
+                    href={projectDetails.frontend}
+                    target="_blank"
+                    className="btn-xs border rounded-full px-3 py-0.5 font-semibold text-violet-500 hover:text-violet-300 flex items-center gap-2"
+                  >
+                    <FaGithub /> Frontend →
+                  </a>
+                  {projectDetails.backend && (
+                    <a
+                      href={projectDetails.frontend}
+                      target="_blank"
+                      className="btn-xs border rounded-full px-3 py-0.5 font-semibold text-violet-500 hover:text-violet-300 flex items-center gap-2"
+                    >
+                      <FaGithub /> Backend →
+                    </a>
+                  )}
+                </div>
                 <a
                   href={projectDetails.live_demo}
                   target="_blank"
