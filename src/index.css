@@ -11,7 +11,17 @@ html {
 .customized-btn {
     @apply font-bold btn rounded-full bg-gradient-to-r from-violet-800 to-slate-900 text-white/80 text-lg p-6 hover:bg-gradient-to-l border-0
 }
-
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
 
 .spining-card {
     background: linear-gradient(#ffffff, #0bfddd);

@@ -33,13 +33,11 @@ const Education = () => {
                 </div>
 
                 <div className="group bg-slate-900 text-white p-10  transition-all duration-300 hover:bg-violet-700">
-                    <p className="text-xl font-bold text-violet-400">2018</p>
                     <h1 className="text-3xl font-bold mt-2">Higher Secondary Certificate</h1>
                     <p className="font-bold text-gray-300 mt-2">CDA Public School and College</p>
                 </div>
 
                 <div className="group bg-slate-900 text-white p-10 rounded-b-2xl transition-all duration-500  hover:bg-violet-700">
-                    <p className="text-xl font-bold text-violet-400">2016</p>
                     <h1 className="text-3xl font-bold mt-2">Secondary School Certificate</h1>
                     <p className="font-bold text-gray-300 mt-2">Bakalia High School</p>
                 </div>
